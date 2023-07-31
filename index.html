@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+   
+
+    
+</head>
+<div class="logout d-none" id="logoutPage">
+    <nav class="navbar bg-transparent shadow p-3">
+        <div class="container">
+          <a  class="navbar-brand text-white ">SMART LOGIN</a>
+          <form class="d-flex" role="search">
+            
+            
+              <button class="btn btn-outline-warning " type="submit" id="logOut">Log Out</button>
+                
+            
+            
+    
+          </form>
+        </div>
+      </nav>
+
+
+      <div class="container text-center  vh-100 d-flex  align-items-center justify-content-center ">
+        <div class="W-content w-75 p-5 shadow m-auto ">
+          <h2 id="welcome"> </h2>
+        </div>
+        </div>
+</div>
+
+
+ 
+
+
+<div class="container my-5 "  id="loginPage">
+    <div class=" content w-75 p-5 mx-auto d-flex flex-column justify-content-center align-items-center gap-4 ">
+
+        <h1 class="text-center">Smart Login System</h1>
+        <input type="text" placeholder="Enter your name" class="form-control btn-outline-primary d-none" id="name" >
+        <p class="text-danger text-center d-none " id="invalidName">Invalid Name</p>
+        <input type="text" placeholder="Enter your email" class="form-control btn-outline-primary" id="email">
+        <p class="text-danger text-center d-none " id="invalidEmail">Invalid Email</p>
+        <input type="password" placeholder="Enter your password" class="form-control" id="password">
+        
+        <p class="text-danger text-center d-none " id="incorrect">incorrect Email or Password</p>
+
+        
+        <button class="btn btn-outline-info form-control" id="login" >Login</button>
+        <button class="btn btn-outline-primary form-control d-none" id="btnSignUP">sign UP</button>
+        <p id="haveACC" class="text-white">Don’t have an account?    <a href="" class="text-white text-decoration-none" id="signUP">Sign Up </a> </p> 
+       
+                
+    </div>
+</div>
+
+
+
+<body >
+    
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <script src="js/index.js"></script>
+</body>
+</html
